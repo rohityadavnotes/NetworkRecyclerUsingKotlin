@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/relativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/logoImageView"
+        android:layout_width="@dimen/_60sdp"
+        android:layout_height="@dimen/_60sdp"
+        android:padding="@dimen/_5sdp"
+        android:contentDescription="@string/app_name"
+        android:scaleType="centerInside"
+        app:srcCompat="@drawable/user_placeholder" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_60sdp"
+        android:layout_toEndOf="@+id/logoImageView"
+        android:layout_toRightOf="@+id/logoImageView"
+        android:gravity="center_vertical"
+        android:padding="@dimen/_5sdp">
+
+        <TextView
+            android:id="@+id/codeNameTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Alpha"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/_12ssp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/versionNumbersTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/codeNameTextView"
+            android:layout_alignStart="@+id/codeNameTextView"
+            android:layout_alignLeft="@+id/codeNameTextView"
+            android:text="Version : 1.0"
+            android:textSize="@dimen/_10ssp" />
+
+        <TextView
+            android:id="@+id/apiLevelTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/versionNumbersTextView"
+            android:layout_alignStart="@+id/versionNumbersTextView"
+            android:layout_alignLeft="@+id/versionNumbersTextView"
+            android:text="API Level : 1"
+            android:textSize="@dimen/_10ssp" />
+
+        <TextView
+            android:id="@+id/releaseDateTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/codeNameTextView"
+            android:layout_alignBottom="@+id/codeNameTextView"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:text="September 23, 2008"
+            android:textColor="#4E00FF"
+            android:textSize="@dimen/_10ssp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+</RelativeLayout>
